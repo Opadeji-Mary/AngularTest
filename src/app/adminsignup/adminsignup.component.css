@@ -4,15 +4,17 @@
     overflow: hidden;
     border-radius: 16px;
     color: #010101;
+    margin-left: 500px;
   }
   
   .form {
-    position: relative;
+    position: relative; 
     display: flex;
     flex-direction: column;
     padding: 32px 24px 24px;
     gap: 16px;
     text-align: center;
+    padding-top: 30px;
   }
   
   /*Form text*/
@@ -66,7 +68,7 @@
   
   /*Button*/
   .form button {
-    background-color: #0066ff;
+    background-color: #ff00b3;
     color: #fff;
     border: 0;
     border-radius: 24px;
@@ -78,5 +80,5 @@
   }
   
   .form button:hover {
-    background-color: #005ce6;
+    background-color: #e6a100;
   }

@@ -4,6 +4,7 @@
     overflow: hidden;
     border-radius: 16px;
     color: #010101;
+    margin-left: 500px;
   }
   
   .form {
@@ -33,6 +34,7 @@
     background-color: #fff;
     margin: 1rem 0 .5rem;
     width: 100%;
+    
   }
   
   .input {
@@ -65,7 +67,7 @@
   }
   
   /*Button*/
-  .form button {
+  /* .form button {
     background-color: #0066ff;
     color: #fff;
     border: 0;
@@ -75,8 +77,4 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color .3s ease;
-  }
-  
-  .form button:hover {
-    background-color: #005ce6;
-  }
+  } */
