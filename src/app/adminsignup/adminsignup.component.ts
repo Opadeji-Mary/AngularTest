@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { Routes } from '@angular/router';
 
 interface adminsignup{
-FirstName:string,
- LastName:string,
- Email:string,
- Age:string,
- Password:string,
+  AdminFName:string,
+  AdminLName:string,
+  AdminEmail:string,
+  AdminAge:string,
+  AdminPassword:string,
 }
 @Component({
   selector: 'app-adminsignup',
@@ -19,35 +19,37 @@ FirstName:string,
 })
 export class AdminsignupComponent {
 // constructor (public navigate:Routes){}
-  public FirstName:string=""
-  public LastName:string=""
-  public Email:string=""
-  public Age:string=""
-  public Password:string=""
+  public AdminFName:string=""
+  public AdminLName:string=""
+  public AdminEmail:string=""
+  public AdminAge:string=""
+  public AdminPassword:string=""
   public Error : string =""
+  // public comfirm: any =""
   public studentarray:adminsignup[]=[]
   
   signup(){
       let studentObject: adminsignup={
-        FirstName:this.FirstName,
-        LastName:this.LastName,
-        Email:this.Email,
-        Age:this.Age,
-        Password:this.Password
+        AdminFName:this.AdminFName,
+        AdminLName:this.AdminLName,
+        AdminEmail:this.AdminEmail,
+        AdminAge:this.AdminAge,
+        AdminPassword:this.AdminPassword
       }
-      let Res = this.studentarray.push(studentObject);
-  //     if(!Res){
-  //       this.comfirm = true;
-  //       this.Error = "Register failed"
-  //       setTimeout(()=>{
-  //         this.Error = ""
-  //         this.comfirm = false;
-  //       }, 3000);
-  //     }
-  //     else{
-  //       localStorage.setItem("AdminDetails",JSON.stringify(this.studentarray));
-  //       this.navigate.navigate(['/adminsignin']);
-  //     }
+      // localStorage.setItem("AdminDetails",JSON.stringify(this.studentarray));
+      // let Res = this.studentarray.push(studentObject);
+      // if(!Res){
+      //   this.comfirm = true;
+      //   this.Error = "Register failed"
+      //   setTimeout(()=>{
+      //     this.Error = ""
+      //     this.comfirm = false;
+      //   }, 3000);
+      // }
+      // else{
+        // localStorage.setItem("AdminDetails",JSON.stringify(this.studentarray));
+        // this.navigate(['/adminsignin']);
+      // }
   // }
   }
 }

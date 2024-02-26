@@ -4,12 +4,12 @@
         <h6 class="text-center">CROWN WEALTH INSTITUTION</h6>
         <span class="title">Sign up Admin</span>
         <div class="form-container">
-            <input type="text" placeholder="FirstName"  [(ngModel)]="FirstName">
-           <input type="text"  placeholder="LastName" [(ngModel)]="LastName">
-            <input type="email" placeholder="Email" [(ngModel)]="Email">
-            <input type="text" placeholder="Age" [(ngModel)]="Age">
-            <input type="password" placeholder="Password" [(ngModel)]="Password">
+            <input type="text" placeholder="FirstName"  [(ngModel)]="AdminFName">
+           <input type="text"  placeholder="LastName" [(ngModel)]="AdminLName">
+            <input type="email" placeholder="Email" [(ngModel)]="AdminEmail">
+            <input type="text" placeholder="Age" [(ngModel)]="AdminAge">
+            <input type="password" placeholder="Password" [(ngModel)]="AdminPassword">
         </div>
-        <button onclick="signup()">Sign up</button>
+        <button (click)="signup()">Sign up</button>
     </form>
 </div>

@@ -1,14 +1,15 @@
 <p>studentsignup works!</p>
 <div class="form-box">
-    <form class="form">
+    <div class="form">
         <h6>CROWN WEALTH INSTITUTION</h6>
         <span class="title">Student Add Up</span>
         <div class="form-container">
             <input type="text" placeholder="FirstName"  [(ngModel)]="firstName">
-            <input type="text"  placeholder="LastName" [(ngModel)]="laststName">
+            <input type="text"  placeholder="LastName" [(ngModel)]="lastName">
             <input type="email" placeholder="Email" [(ngModel)]="email">
             <input type="password" placeholder="Password" [(ngModel)]="passWord">
         </div>
-        <button class="btn btn-success" onclick="add()">Add</button>
-        <button class="btn btn-warning" onclick="dele()">edit</button>
-    </form>
+        <button routerLink="/dashboard" class="btn btn-success" (click)="addContact()">Add up</button>
+    </div>
+    <div *ngFor="let item of this.studentArray, let i =index, "></div>
+</div>
